@@ -1,14 +1,145 @@
-h1 {
-    color: #fff;
-    text-align: center;
-    margin-top: 50vh;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#videoBG {
-    width: 100vw;
+
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+.BGvideo {
+    position: relative;
     height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.BGvideo video {
     z-index: -1;
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Typing animation part*/
+.typing {
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.iam {
+    color: black;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.text {
+    border-right: 9px solid red;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+/*typing animation end*/
+
+
+/*Follow footer*/
+.menu {
+    text-transform: uppercase;
+    color: whitesmoke;
+    display: inline-block;
+    cursor: pointer;
+    pointer-events: none;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.menu:hover {
+    pointer-events: all;
+}
+
+.label {
+    display: inline-block;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.spacer {
+    display: inline-block;
+    width: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    vertical-align: middle;
+    cursor: pointer;
+    position: relative;
+}
+
+.spacer:before {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #ffffff;
+    height: 1px;
+    width: 0%;
+    transition: width 0.25s ease;
+    transition-delay: 0.7s;
+}
+
+.item {
+    position: relative;
+    display: inline-block;
+    margin-right: 15px;
+    top: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease, top 0.5s ease;
+    transition-delay: 0;
+}
+
+.menu:hover .spacer:before {
+    width: 100%;
+    transition-delay: 0s;
+}
+
+.menu:hover .item {
+    opacity: 1;
+    top: 0px;
+}
+
+@media(max-width:473px) {
+    .menu {
+        bottom: 30px;
+        left: 10px;
+    }
+
+    .spacer {
+        display: inline-block;
+        width: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+        vertical-align: middle;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .item {
+        position: relative;
+        display: inline-block;
+        margin-right: 2px;
+        top: 0px;
+        opacity: 0;
+        transition: opacity 0.5s ease, top 0.5s ease;
+        transition-delay: 0;
+    }
 }
