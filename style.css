@@ -6,16 +6,6 @@ body {
 }
 
 
-.BGvideo {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
 .BGvideo video {
     z-index: -1;
     position: fixed;
