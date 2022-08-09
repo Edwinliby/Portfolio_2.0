@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+.alien{
+    margin-top: 1em;
+}
+button{
+    border: none;
+    background-color: transparent;
+    margin: 0 auto;
+    display: block;
+}
+
+.dark-mode {
+    background-color: #F2DF3A;
+    color: white;
+}

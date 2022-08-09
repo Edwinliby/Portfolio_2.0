@@ -1,10 +1,8 @@
-html,
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 .BGvideo video {
     z-index: -1;
@@ -25,8 +23,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 60vh;
-}
+    min-height: 10em;
+    margin-top: 10em;}
 
 .iam {
     color: rgb(255, 255, 255);
@@ -38,6 +36,16 @@ body {
     border-right: 9px solid red;
     font-size: 30px;
     color: #ffffff;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+button{
+    padding: .5em;
 }
 
 /*typing animation end*/
