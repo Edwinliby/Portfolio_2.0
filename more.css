@@ -1,21 +1,74 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap'); */
+
 body {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.5em;
+    font-weight: bold;
     margin: 0;
     padding: 0;
     background-color: white;
     color: black;
 }
 
-.alien{
-    margin-top: 1em;
+/*TOPBAR*/
+.topbar {
+    display: flex;
+    margin: 1em;
 }
-button{
-    border: none;
-    background-color: transparent;
-    margin: 0 auto;
-    display: block;
+
+li {
+    display: inline;
+    padding: .5em;
+    width: 100%;
+}
+
+
+span:hover {
+    color: rgb(163, 0, 208);
+}
+
+.left {
+    float: left;
+    font-size: 1.5em;
+}
+
+.right {
+    float: right;
 }
 
 .dark-mode {
     background-color: #F2DF3A;
     color: white;
+}
+
+/*TOPBAR END*/
+
+.box {
+    margin: 1em;
+    margin-top: 2em;
+    padding: 1em;
+    text-align: center;
+}
+
+.card-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.block {
+    margin: 1em;
+    width: 15em;
+    height: 5em;
+    padding-top: 1em;
+    text-align: center;
+    border: #090909  solid;
+    box-shadow: #b1b1b1 .3em .3em;
+    font-size: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+    .card-box {
+        flex-direction: row;
+    }
 }

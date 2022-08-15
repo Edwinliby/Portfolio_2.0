@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YOLO</title>
     <link rel="stylesheet" href="more.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+    
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/5be8782ad0.js" crossorigin="anonymous"></script>
 </head>
-<body>
-   <div class="alien">
-    <button onclick="myFunction()"><img src="Resources/alien.png"></button>
-   </div>
 
+<body>
+    <div class="topbar">
+        <li><span class="left">Hello !</span></li>
+        <li><a class="right" onclick="myFunction()"><img src="Resources/alien.png"></a></li>
+    </div>
+    <div class="box">
+        <h1>Github Stats</h1>
+        <div class="card-box">
+          <div class="block"><h5>Followers</h5><span id="followers">x</span></div>
+          <div class="block"><h5>Following</h5><span id="following">x</span></div>
+          <div class="block"><h5>Public Repos</h5><span id="repos">x</span></div>
+          <div class="block"><h5>Public Gists</h5><span id="gists">x</span></div>
+        </div>
+    </div>
 </body>
 <script>
     function myFunction() {
-       var element = document.body;
-       element.classList.toggle("dark-mode");
+        var element = document.body;
+        element.classList.toggle("dark-mode");
     }
 </script>
-</html>
 
+</html>
