@@ -8,6 +8,7 @@ fetch('https://api.github.com/users/Edwinliby')
     document.querySelector("#following").innerText=data.following
     document.querySelector("#repos").innerText=data.public_repos
     document.querySelector("#gists").innerText=data.public_gists
+
 })
 
 

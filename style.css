@@ -23,8 +23,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 10em;
-    margin-top: 10em;}
+    min-height: 1em;
+    margin-top: 12em;
+}
 
 .iam {
     color: rgb(255, 255, 255);
@@ -39,13 +40,35 @@ body {
 }
 
 .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
+    height: 3em;
+    margin-top: 3em;
+    margin-left: 45%;
+    margin-right: 45%;
+    padding: .75em;
+    background-color: rgba(255, 255, 255, 0.81);
+    text-align: center;
+    border-radius: 2em;
 }
-button{
-    padding: .5em;
+
+.btn:hover {
+    background-color: #ffffff;
+}
+
+@media(max-width:473px) {
+
+    .iam {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    .btn {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
 }
 
 /*typing animation end*/
@@ -124,7 +147,7 @@ button{
     .spacer {
         float: right;
         width: 30px;
-        
+
         margin-right: 20px;
         vertical-align: middle;
         cursor: pointer;

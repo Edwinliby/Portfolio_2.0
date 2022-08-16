@@ -22,14 +22,9 @@ li {
     width: 100%;
 }
 
-
-span:hover {
-    color: rgb(163, 0, 208);
-}
-
 .left {
     float: left;
-    font-size: 1.5em;
+    color: black;
 }
 
 .right {
@@ -66,6 +61,7 @@ span:hover {
     box-shadow: #b1b1b1 .3em .3em;
     font-size: 1em;
 }
+
 
 @media only screen and (min-width: 768px) {
     .card-box {
