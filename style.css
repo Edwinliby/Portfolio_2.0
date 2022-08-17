@@ -24,7 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 1em;
-    margin-top: 12em;
+    margin-top: 15em;
 }
 
 .iam {
@@ -41,7 +41,7 @@ body {
 
 .btn {
     height: 3em;
-    margin-top: 3em;
+    margin-top: 1em;
     margin-left: 45%;
     margin-right: 45%;
     padding: .75em;

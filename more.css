@@ -40,7 +40,6 @@ li {
 
 .box {
     margin: 1em;
-    margin-top: 2em;
     padding: 1em;
     text-align: center;
 }
@@ -49,6 +48,7 @@ li {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 1.7em;
 }
 
 .block {
@@ -57,7 +57,7 @@ li {
     height: 5em;
     padding-top: 1em;
     text-align: center;
-    border: #090909  solid;
+    border: #090909 solid;
     box-shadow: #b1b1b1 .3em .3em;
     font-size: 1em;
 }
@@ -67,4 +67,11 @@ li {
     .card-box {
         flex-direction: row;
     }
+}
+
+.block2 {
+    border: #090909 solid;
+    box-shadow: #b1b1b1 .3em .3em;
+    padding: .5em;   
+    margin-top: 1em;
 }
